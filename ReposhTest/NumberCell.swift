@@ -10,23 +10,14 @@ import UIKit
 
 class NumberCell: UITableViewCell {
 
-    var numberLabel = UILabel()
-    
+    @IBOutlet weak var numberLabel: UILabel!
+
     class var identifier: String {
         return String(describing: self)
     }
     
     class var nib: UINib {
         return UINib(nibName: identifier, bundle: nil)
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        let label = UILabel()
-        label.center = self.center
-        label.textAlignment = .center
-        self.numberLabel = label
-        self.addSubview(label)
     }
 
     func addDataToNumberCell(number: Int) {

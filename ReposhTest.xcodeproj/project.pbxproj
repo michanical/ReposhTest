@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B41366401F51EE37008E3325 /* BigNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413663F1F51EE37008E3325 /* BigNumber.swift */; };
 		B41366421F52008C008E3325 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41366411F52008C008E3325 /* MainView.xib */; };
 		B41366441F5209DA008E3325 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41366431F5209DA008E3325 /* NumberCell.swift */; };
+		B48CE6B21F520D9400C0A754 /* NumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48CE6B11F520D9400C0A754 /* NumberCell.xib */; };
+		B48CE6B51F5217C900C0A754 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CE6B41F5217C900C0A754 /* MainView.swift */; };
 		B4E1301D1F519063004DEFAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1301C1F519063004DEFAB /* AppDelegate.swift */; };
 		B4E130221F519063004DEFAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E130201F519063004DEFAB /* Main.storyboard */; };
 		B4E130241F519063004DEFAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E130231F519063004DEFAB /* Assets.xcassets */; };
@@ -19,9 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B413663F1F51EE37008E3325 /* BigNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigNumber.swift; sourceTree = "<group>"; };
 		B41366411F52008C008E3325 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		B41366431F5209DA008E3325 /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
+		B48CE6B11F520D9400C0A754 /* NumberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberCell.xib; sourceTree = "<group>"; };
+		B48CE6B41F5217C900C0A754 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = View/MainView.swift; sourceTree = "<group>"; };
 		B4E130191F519063004DEFAB /* ReposhTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReposhTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E1301C1F519063004DEFAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E130211F519063004DEFAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B48CE6B31F520D9A00C0A754 /* NumberCell */ = {
+			isa = PBXGroup;
+			children = (
+				B41366431F5209DA008E3325 /* NumberCell.swift */,
+				B48CE6B11F520D9400C0A754 /* NumberCell.xib */,
+			);
+			name = NumberCell;
+			sourceTree = "<group>";
+		};
 		B4E130101F519063004DEFAB = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				B4E130391F519489004DEFAB /* MathematicalMethods.swift */,
-				B413663F1F51EE37008E3325 /* BigNumber.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -86,8 +96,9 @@
 		B4E130351F5193DB004DEFAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B48CE6B41F5217C900C0A754 /* MainView.swift */,
 				B41366411F52008C008E3325 /* MainView.xib */,
-				B41366431F5209DA008E3325 /* NumberCell.swift */,
+				B48CE6B31F520D9A00C0A754 /* NumberCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48CE6B21F520D9400C0A754 /* NumberCell.xib in Resources */,
 				B4E130271F519063004DEFAB /* LaunchScreen.storyboard in Resources */,
 				B41366421F52008C008E3325 /* MainView.xib in Resources */,
 				B4E130241F519063004DEFAB /* Assets.xcassets in Resources */,
@@ -174,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E1303A1F519489004DEFAB /* MathematicalMethods.swift in Sources */,
-				B41366401F51EE37008E3325 /* BigNumber.swift in Sources */,
+				B48CE6B51F5217C900C0A754 /* MainView.swift in Sources */,
 				B4E130381F519412004DEFAB /* ViewController.swift in Sources */,
 				B4E1301D1F519063004DEFAB /* AppDelegate.swift in Sources */,
 				B41366441F5209DA008E3325 /* NumberCell.swift in Sources */,

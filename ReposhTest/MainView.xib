@@ -11,22 +11,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainView" customModule="ReposhTest" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="239"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="486-Ih-Ha9">
-                    <rect key="frame" x="50" y="50" width="275" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Введите текст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="486-Ih-Ha9">
+                    <rect key="frame" x="50" y="50" width="275" height="22"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erh-Iv-7MZ">
-                    <rect key="frame" x="50" y="90" width="275" height="30"/>
+                    <rect key="frame" x="50" y="82" width="275" height="30"/>
                     <state key="normal" title="Посчитать"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-D7-TXv">
-                    <rect key="frame" x="50" y="130" width="275" height="79"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Сумма:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-D7-TXv">
+                    <rect key="frame" x="50" y="122" width="275" height="87"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -46,6 +46,11 @@
                 <constraint firstAttribute="bottom" secondItem="7EI-D7-TXv" secondAttribute="bottom" constant="30" id="uhF-C3-gfc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="calculateButton" destination="Erh-Iv-7MZ" id="wlK-UY-0vt"/>
+                <outlet property="inputTextField" destination="486-Ih-Ha9" id="PRX-ke-hCD"/>
+                <outlet property="sumLabel" destination="7EI-D7-TXv" id="Xgc-yi-Fth"/>
+            </connections>
             <point key="canvasLocation" x="32.5" y="-96.5"/>
         </view>
     </objects>
