@@ -143,6 +143,7 @@
 				TargetAttributes = {
 					B4E130181F519063004DEFAB = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2PE2796P6G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -312,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2PE2796P6G;
 				INFOPLIST_FILE = ReposhTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = michanical.ReposhTest;
@@ -324,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2PE2796P6G;
 				INFOPLIST_FILE = ReposhTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = michanical.ReposhTest;
